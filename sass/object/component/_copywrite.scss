@@ -1,0 +1,10 @@
+@use '../../global/' as g;
+
+.c-copywrite__link {
+    margin-top: 24px;
+}
+
+.c-copywrite {
+    color: g.$copywrite-color;
+    font-size: 10px;
+}

@@ -1,0 +1,8 @@
+@use '../global/' as g;
+
+.l-footer {
+    background-color: g.$footer-color;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
