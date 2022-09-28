@@ -27,3 +27,28 @@
         margin-top: 48px;
     }
 }
+
+.p-hero__scroll {
+    color: #fff;
+    position: absolute;
+    padding: 10px 10px 90px;
+    right: 20px;
+    bottom: 0;
+    font-weight: bold;
+    letter-spacing: .2em;
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl; //chrome, safari
+    -ms-writing-mode: vertical-rl; //IE, edge
+
+    &::after {
+        position: absolute;
+        bottom: 0;
+        width: 1px;
+        height: 80px;
+        left: 50%;
+        background: #fff;
+        content: '';
+        -webkit-animation: scrollDownLine 1.5s infinite;
+        animation: scrollDownLine 1.5s infinite;
+    }
+}

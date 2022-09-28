@@ -1,4 +1,4 @@
-/*         header           */
+@use '../global/' as g;
 
 .l-header {
     display: flex;
@@ -11,4 +11,10 @@
     color: white;
     align-items: center;
     background-color: none;
+    transition: all .3s;
+
+    &.change-color {
+        background-color: #21054d;
+        height: 64px;
+    }
 }
