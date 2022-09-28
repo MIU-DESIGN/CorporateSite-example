@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/desyle.css">
     <link rel="stylesheet" href="css/main.css">
     <title>CorporateSite</title>
@@ -52,17 +54,17 @@
             <li>
                 <time datetime="2030-01-01">2030.01.01</time>
                 <p class="p-news-list__category">お知らせ</p>
-                <p class="p-news-list__text">Webデザインニュースサイト「ウェブマガジン」に取材いただきました</p>
+                <a class="p-news-list__text" href="#">Webデザインニュースサイト「ウェブマガジン」に取材いただきました</a>
             </li>
             <li>
                 <time datetime="2030-01-01">2030.01.01</time>
                 <p class="p-news-list__category">制作実績</p>
-                <p class="p-news-list__text">Smoothiesta様のWebサイトを制作いたしました</p>
+                <a class="p-news-list__text" href="#">Smoothiesta様のWebサイトを制作いたしました</a>
             </li>
             <li>
                 <time datetime="2030-01-01">2030.01.01</time>
                 <p class="p-news-list__category">採用</p>
-                <p class="p-news-list__text">Webデザイナーを1名募集中です！</p>
+                <a class="p-news-list__text" href="#">Webデザイナーを1名募集中です！</a>
             </li>
         </ul>
     </section>
@@ -109,6 +111,12 @@
             <div class="p-works__slider-wrap js-slider">
                 <div class="js-slider__pic">
                     <img src="img/works/smoothiesta.jpg" alt="スライド１">
+                </div>
+                <div class="js-slider__pic">
+                    <img src="img/works/web-conference.jpg" alt="スライド１">
+                </div>
+                <div class="js-slider__pic">
+                    <img src="img/works/lamina.jpg" alt="スライド１">
                 </div>
             </div>
             <div class="p-works__desc">
@@ -208,6 +216,7 @@
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

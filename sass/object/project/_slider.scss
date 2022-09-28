@@ -1,0 +1,43 @@
+@use '../../global' as g;
+
+.slick-dots {
+    text-align: right;
+    li {
+        margin: 0 3px;
+    }
+    li.slick-active button:before {
+        opacity: .75;
+        color: g.$accent-color;
+    }
+}
+
+.slick-prev{
+    left: 20px;
+    z-index: 20;
+    &::before {
+        font-family: "Font Awesome 6 Free"; 
+        font-weight: 900; 
+        content: "\f104";
+        font-size:28px;
+        color: g.$accent-color;
+    }
+}
+.slick-next {
+    right: 20px;
+    z-index: 20;
+    &::before {
+        font-family: "Font Awesome 6 Free"; 
+        font-weight: 900; 
+        content: "\f105";
+        font-size:28px;
+        color: g.$accent-color;
+    }
+}
+
+
+.slider {
+    visibility: hidden;
+}
+.slider.slick-initialized {
+visibility: visible;
+}

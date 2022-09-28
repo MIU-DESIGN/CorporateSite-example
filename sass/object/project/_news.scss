@@ -32,4 +32,10 @@
         text-align: center;
         border-radius: 8px;
     }
+
+    &__text:hover {
+        text-decoration: underline;
+        text-decoration-color: g.$text-color;
+        text-decoration-thickness: .5px;
+    }
 }
