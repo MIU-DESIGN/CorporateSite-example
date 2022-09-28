@@ -1,0 +1,10 @@
+
+.p-header-nav__list {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+
+    li + li {
+        margin-left: 25px;
+    }
+}

@@ -1,0 +1,23 @@
+@use '../../global/' as g;
+
+.p-company {
+    padding: 0;
+    text-align: center;
+}
+
+.p-company-inner {
+    padding: 100px 0;
+    max-width: 1300px;
+    margin: 0 auto;
+    background-image: url('../img/bg-circle.png'), url('../img/bg-face.png');
+    background-position: center center, center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.p-company__body,
+.p-company__link {
+    margin-top: 32px;
+}
+

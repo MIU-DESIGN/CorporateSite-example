@@ -1,0 +1,29 @@
+.p-hero {
+    height: 100vh;
+    background-image: url('../img/mainvisual.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    &__inner {
+        color: #fff;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 72px;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+    &__subtitle {
+        font-size: 24px;
+        letter-spacing: .1em;
+        margin-top: 16px;
+    }
+    &__link {
+        margin-top: 48px;
+    }
+}

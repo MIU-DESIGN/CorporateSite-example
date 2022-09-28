@@ -1,0 +1,35 @@
+@use '../../global/' as g;
+
+.p-news {
+    display: flex;
+    justify-content: center;
+}
+
+.p-news-list {
+    margin-left: 50px;
+    font-size: 15px;
+    color: g.$text-color;
+    li {
+        display: flex;
+        align-items: center;
+    }
+    li + li {
+        margin-top: 16px;
+    }
+
+    &__category,
+    &__text {
+        margin-left: 20px;
+    }
+
+    &__category {
+        width: 80px;
+        font-size: 10px;
+        padding: 3px 0;
+        display: inline-block;
+        background-color: g.$base-color;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 8px;
+    }
+}

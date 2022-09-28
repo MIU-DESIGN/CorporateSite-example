@@ -6,55 +6,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/desyle.css">
     <link rel="stylesheet" href="css/main.css">
     <title>CorporateSite</title>
 </head>
 <body>
-<header class="header">
-    <div class="header__top">
-        <h1 class="header-logo">PON DESIGN</h1>
-        <nav class="header-nav">
-            <ul class="header-nav__list">
-                <li>NEWS</li>
-                <li>SERVICE</li>
-                <li>WORKS</li>
-                <li>COMPANY</li>
-                <li>RECRUIT</li>
-                <li>CONTACT</li>
-            </ul>
-        </nav>
-    </div>
-    <div class="header__middle">
-        <h1 class="site__title">WEB DESIGN SPECIALIST</h1>
-        <p class="site__title--sub">お客様の夢を叶えるWebサイトを制作</p>
-        <a class="contact-btn" href="#">CONTACT</a>
-    </div>
+<header class="l-header">
+    <h1 class="l-header__logo">
+        <a href="#index.html">
+            <img src="img/header-logo.png" alt="ヘッダーロゴ">
+        </a>
+    </h1>
+    <nav class="p-header-nav">
+        <ul class="p-header-nav__list">
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">WORKS</a></li>
+            <li><a href="#">COMPANY</a></li>
+            <li><a href="#">RECRUIT</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
 </header>
-<main>
-    <section class="news">
-        <div class="section__title">
-            <h2 class="section__title--en">NEWS</h2>
-            <p class="section__title--ja">お知らせ</p>
+<main class="l-contents">
+    <div class="p-hero">
+        <div class="p-hero__inner">
+            <div class="p-hero__heading">
+                <h1 class="p-hero__title">WEB DESIGN SPECIALIST</h1>
+                <p class="p-hero__subtitle">お客様の夢を叶えるWebサイトを制作</p>
+            </div>
+            <div class="p-hero__link">
+                <a class="c-btn c-btn--transparent" href="#">CONTACT</a>
+            </div>
         </div>
-        <ul class="news__list">
+    </div>
+    <section class="p-news l-section">
+        <div class="p-heading">
+            <h2 class="c-heading__primary">NEWS<span class="c-heading__sub c-heading__sub--left">お知らせ</span>
+            </h2>
+        </div>
+        <ul class="p-news-list">
             <li>
                 <time datetime="2030-01-01">2030.01.01</time>
-                <p class="news__category">お知らせ</p>
-                <p class="news__text">Webデザインニュースサイト「ウェブマガジン」に取材いただきました</p>
+                <p class="p-news-list__category">お知らせ</p>
+                <p class="p-news-list__text">Webデザインニュースサイト「ウェブマガジン」に取材いただきました</p>
             </li>
             <li>
                 <time datetime="2030-01-01">2030.01.01</time>
-                <p class="news__category">お知らせ</p>
-                <p class="news__text">Webデザインニュースサイト「ウェブマガジン」に取材いただきました</p>
+                <p class="p-news-list__category">制作実績</p>
+                <p class="p-news-list__text">Smoothiesta様のWebサイトを制作いたしました</p>
             </li>
             <li>
                 <time datetime="2030-01-01">2030.01.01</time>
-                <p class="news__category">お知らせ</p>
-                <p class="news__text">Webデザインニュースサイト「ウェブマガジン」に取材いただきました</p>
+                <p class="p-news-list__category">採用</p>
+                <p class="p-news-list__text">Webデザイナーを1名募集中です！</p>
             </li>
         </ul>
+    </section>
+    <section class="p-service l-section">
+        <div class="l-inner">
+            <div class="p-service__heading">
+                <div class="c-heading__primary">SERVICE
+                    <span class="c-heading__sub">事業内容</span>
+                </div>
+            </div>
+            <div class="p-service__body">
+                <div class="p-service-card-wrap">
+
+                    <div class="p-service-card">
+                        <div class="p-service-card__img">
+                            <img src="img/service1.avif" alt="WEBサイト制作">
+                        </div>
+                        <h3 class="p-service-card__title">Webサイト制作</h3>
+                        <p class="p-service-card__text">新規サイトの制作はもちろんサイトリニューアルやランディングページの制作も可能です。</p>
+                    </div>
+                    <div class="p-service-card">
+                        <div class="p-service-card__img">
+                            <img src="img/service2.jpg" alt="WEBサイト運用">
+                        </div>
+                        <h3 class="p-service-card__title">Webサイト運用</h3>
+                        <p class="p-service-card__text">サイトの更新作業や独自のアクセス解析に基づいたサイト改善のご提案をいたします。</p>
+                    </div>
+                    <div class="p-service-card">
+                        <div class="p-service-card__img">
+                            <img src="img/service3.jpg" alt="アプリ開発">
+                        </div>
+                        <h3 class="p-service-card__title">アプリ開発</h3>
+                        <p class="p-service-card__text">スマートフォンアプリ開発の他、Vue.jsやReactによるWebアプリの開発が可能です。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-service__link">
+                <a class="c-btn" href="#">MORE</a>
+            </div>
+        </div>
+    </section>
+    <section class="p-works l-section">
+        <div class="p-works-inner l-inner">
+            <div class="p-works__slider-wrap js-slider">
+                <div class="js-slider__pic">
+                    <img src="img/works/smoothiesta.jpg" alt="スライド１">
+                </div>
+            </div>
+            <div class="p-works__desc">
+                <div class="p-works__heading">
+                    <div class="c-heading__primary">WORKS
+                        <span class="c-heading__sub">制作実績</span>
+                    </div>
+                </div>
+                <div class="p-works__body">
+                    <div class="p-works__text">様々なジャンルのWebサイト制作が可能です。</br>ご購入やお申込み数の増加などを実現します！</div>
+                </div>
+                <div class="p-works__link">
+                    <a class="c-btn" href="#">MORE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-company l-section">
+        <div class="p-company-inner l-inner">
+            <div class="p-company__heading">
+                <div class="c-heading__primary">COMPANY
+                    <span class="c-heading__sub">私たちについて</span>
+                </div>
+            </div>
+            <div class="p-company__body">
+                <div class="p-message">
+                    <div class="p-message__heading">
+                        <span class="p-message__underline">サイトのゴール = 夢を叶えること</span>
+                    </div>
+                    <div class="p-message__text">
+                        お客様の夢を叶えること。</br>
+                        それがWebサイトのゴールであり、私たちが目指すことです。</br>
+                        だからこそちゃんと成果を出すサイトを全力でお作りします。</br>
+                        お客様の笑顔を見たい。</br>
+                        夢を実現する手助けをさせてください。
+                    </div>
+                </div>
+            </div>
+            <div class="p-company__link">
+                <a class="c-btn" href="">MORE</a>
+            </div>
+
+        </div>
     </section>
 
 </main>

@@ -1,0 +1,17 @@
+@use '../../global/' as g;
+
+.p-message {
+    text-align: center;
+    color: g.$text-color;
+    &__heading {
+        font-size: 40px;
+    }
+    &__underline {
+        padding: 0 35px;
+        background: linear-gradient(transparent 70%, #f5f534 0%);
+    }
+    &__text {
+        margin-top: 40px;
+        line-height: 2;
+    }
+}

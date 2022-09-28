@@ -1,0 +1,19 @@
+@use '../../global/' as g;
+
+.c-heading__primary {
+    font-size: 36px;
+    font-weight: bold;
+    color: g.$accent-color;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.c-heading__sub {
+    display: block;
+    font-size: 13px;
+    color: g.$accent-color;
+
+    &--left {
+        text-align: left;
+    }
+}

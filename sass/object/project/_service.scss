@@ -1,0 +1,47 @@
+@use '../../global/' as g;
+
+.p-service {
+    &__heading {
+        margin-bottom: 32px;
+    }
+    &__body {
+        margin-bottom: 32px;
+    }
+    &__link {
+        text-align: center;
+    }
+}
+
+
+.p-service-card-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.p-service-card {
+    color: g.$text-color;
+    &__img {
+        aspect-ratio: 3 / 2;
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 24px;
+    }
+
+    &__text {
+        margin-top: 16px;
+        text-align: left;
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+}
+

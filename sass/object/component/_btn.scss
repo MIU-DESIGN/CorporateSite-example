@@ -1,0 +1,24 @@
+@use '../../global/variables' as v;
+
+.c-btn {
+    display: inline-block;
+    width: 220px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    line-height: 1.4;
+    padding: 18px 0;
+    border-radius: 50px;
+    background-image: v.$btn-color;
+    
+    &--transparent {
+        background: none;
+        border: 1px solid #fff;
+    }
+
+    &:hover {
+        cursor: pointer;
+        opacity: .3;
+    }
+}
