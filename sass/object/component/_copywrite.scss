@@ -7,4 +7,9 @@
 .c-copywrite {
     color: g.$copywrite-color;
     font-size: 10px;
+    transition: opacity .3s;
+
+    &:hover {
+        opacity: .8;
+    }
 }

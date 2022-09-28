@@ -10,4 +10,11 @@
     li + li {
         margin-left: 20px;
     }
+
+    &__link {
+        transition: opacity .3s;
+        &:hover {
+            opacity: .8;
+        }
+    }
 }
