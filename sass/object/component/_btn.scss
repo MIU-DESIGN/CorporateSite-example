@@ -2,6 +2,7 @@
 
 .c-btn {
     display: inline-block;
+    position: relative;
     width: 220px;
     font-size: 15px;
     font-weight: bold;
@@ -11,14 +12,33 @@
     padding: 18px 0;
     border-radius: 50px;
     background-image: v.$btn-color;
+    transition: all .3s;
+    background-size: 200% auto;
     
+    &::after {
+        position: absolute;
+        top: 50%;
+        right: 1.5em;
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        content: "\f0da";
+        transition: all 0.3s;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    
+    &:hover {
+        background-position: right center;
+        &::after {
+            right: 1.2em;
+        }
+    }
+
     &--transparent {
         background: none;
         border: 1px solid #fff;
-    }
-
-    &:hover {
-        cursor: pointer;
-        opacity: .3;
+        &:hover {
+            opacity: .8;
+        }
     }
 }
