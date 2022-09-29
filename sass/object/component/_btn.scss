@@ -1,4 +1,4 @@
-@use '../../global/variables' as v;
+@use '../../global/' as g;
 
 .c-btn {
     display: inline-block;
@@ -11,7 +11,7 @@
     line-height: 1.4;
     padding: 18px 0;
     border-radius: 50px;
-    background-image: v.$btn-color;
+    background-image: g.$btn-color;
     transition: all .3s;
     background-size: 200% auto;
     
@@ -42,3 +42,60 @@
         }
     }
 }
+
+.c-btn__menu{
+    display: none;
+    width: 44px;
+    height:44px;
+    position: relative;
+    background: none;
+    cursor: pointer;
+
+    @include g.sp {
+        display: block;
+    }
+
+    span {
+        display: inline-block;
+        transition: all .4s;/*アニメーションの設定*/
+        position: absolute;
+        left: 14px;
+        height: 2px;
+        border-radius: 4px;
+        background: #fff;
+        width: 45%;
+
+        &:nth-of-type(1) {
+            top: 12px;
+        }
+        &:nth-of-type(2) {
+            top: 21px;
+        }
+        &:nth-of-type(3) {
+            top: 30px;
+        }
+    }
+
+    &.is-active {
+        span{
+            &:nth-of-type(1) {
+                top: 14px;
+                left: 18px;
+                transform: translateY(6px) rotate(-45deg);
+                width: 50%;
+            }
+            &:nth-of-type(2) {
+                display: none;
+            }
+            &:nth-of-type(3) {
+                top: 26px;
+                left: 18px;
+                transform: translateY(-6px) rotate(45deg);
+                width: 50%;
+            }
+        }
+
+    }
+}
+
+

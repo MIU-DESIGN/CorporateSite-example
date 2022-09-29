@@ -1,5 +1,10 @@
+@use '../../global/' as g;
 
 .p-header-nav{
+
+    @include g.sp {
+        display: none;
+    }
 
     &__list {
         font-size: 14px;
