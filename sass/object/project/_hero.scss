@@ -1,3 +1,5 @@
+@use '../../global/' as g;
+
 .p-hero {
     height: 100vh;
     background-image: url('../img/mainvisual.png');
@@ -11,20 +13,32 @@
     &__inner {
         color: #fff;
         text-align: center;
+        @include g.sp {
+            text-align: left;
+        }
     }
 
     &__title {
         font-size: 72px;
         font-weight: bold;
         line-height: 1.2;
+        @include g.sp {
+            font-size: 40px;
+        }
     }
     &__subtitle {
         font-size: 24px;
         letter-spacing: .1em;
         margin-top: 16px;
+        @include g.sp {
+            font-size: 16px;
+        }
     }
     &__link {
         margin-top: 48px;
+        @include g.sp {
+            margin-top: 24px;
+        }
     }
 }
 
