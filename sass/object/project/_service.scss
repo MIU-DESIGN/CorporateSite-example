@@ -12,15 +12,23 @@
     }
 }
 
-
 .p-service-card-wrap {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
+    @include g.sp {
+        display: block;
+    }
 }
 
 .p-service-card {
     color: g.$text-color;
+    @include g.sp {
+        &:not(:nth-child(1)) {
+            margin-top: 40px;
+        }
+    }
+
     &__img {
         aspect-ratio: 3 / 2;
         img {
@@ -39,9 +47,8 @@
     &__text {
         margin-top: 16px;
         text-align: left;
-        font-size: 15px;
+        font-size: 14px;
         line-height: 1.7;
     }
-
 }
 

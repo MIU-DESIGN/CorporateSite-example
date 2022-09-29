@@ -3,26 +3,42 @@
 .p-news {
     display: flex;
     justify-content: center;
+    @include g.sp {
+        flex-direction: column;
+    }
 }
 
 .p-news-list {
     margin-left: 50px;
     font-size: 15px;
     color: g.$text-color;
+    @include g.sp {
+        margin: 0 auto;
+        margin-top: 32px;
+        max-width: 500px;
+        padding: 0 20px;
+    }
+
     li {
         display: flex;
         align-items: center;
+        @include g.sp {
+            display: block;
+        }
     }
     li + li {
         margin-top: 16px;
+        @include g.sp {
+            margin-top: 36px;
+        }
     }
 
-    &__category,
-    &__text {
-        margin-left: 20px;
+    &__heading {
+        display: flex;
     }
 
     &__category {
+        margin-left: 20px;
         width: 80px;
         font-size: 10px;
         padding: 3px 0;
@@ -31,6 +47,15 @@
         font-weight: bold;
         text-align: center;
         border-radius: 8px;
+    }
+
+    &__text {
+        display: inline-block;
+        margin-left: 20px;
+        @include g.sp {
+            margin-left: 0;
+            margin-top: 10px;
+        }
     }
 
     &__text:hover {

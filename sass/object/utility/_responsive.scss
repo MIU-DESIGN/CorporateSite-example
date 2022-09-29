@@ -7,3 +7,10 @@
         display: block;
     }
 }
+
+.u-heading--left-sp {
+    text-align: left;
+    @include g.sp {
+        text-align: center;
+    }
+}
