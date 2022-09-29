@@ -1,13 +1,7 @@
 @use '../../global/' as g;
 
 .p-header-nav{
-
-    @include g.sp {
-        display: none;
-    }
-
     &__list {
-        font-size: 14px;
         font-weight: bold;
         display: flex;
         justify-content: space-between;
@@ -16,11 +10,23 @@
         li + li {
             margin-left: 25px;
         }
-    }
+        @include g.sp {
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
 
+            li + li {
+                margin: 20px 0 0px 0;
+            }
+        }
+    }
     &__link {
+        font-size: 14px;
         position: relative;
         z-index: 1;
+        @include g.sp {
+            font-size: 16px;
+        }
 
         &::after {
             content: '';
@@ -36,6 +42,30 @@
         }
         &:hover::after {
             width: 100%;
+            @include g.sp {
+                width: 0;
+            }
+        }
+    }
+
+    @include g.sp {
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(135deg, #7633a4, #250d65);
+        transition: opacity .2s;
+
+
+        &.is-show {
+            visibility: visible;
+            opacity: 1;
         }
     }
 }

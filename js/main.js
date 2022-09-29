@@ -23,6 +23,7 @@
     //ハンバーガーメニュー
     $(".c-btn__menu").click(function () {
         $(this).toggleClass('is-active');
+        $('.p-header-nav').toggleClass('is-show');
     });
 }
 
