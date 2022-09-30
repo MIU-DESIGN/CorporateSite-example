@@ -1,3 +1,4 @@
+@use '../../global/' as g;
 
 .p-footer-nav {
     &__list{
@@ -6,6 +7,15 @@
         font-size: 14px;
         font-weight: bold;
         margin: 0 auto;
+        flex-wrap: wrap;
+        @include g.sp {
+            font-size: 12px;
+            justify-content: flex-start;
+            margin-bottom: -10px;
+        }
+    }
+    li {
+        margin-bottom: 10px;
     }
     li + li {
         margin-left: 20px;
