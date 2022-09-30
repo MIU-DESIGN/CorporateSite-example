@@ -70,3 +70,21 @@
         animation: scrollDownLine 1.5s infinite;
     }
 }
+
+.p-sub-hero {
+    height: 240px;
+    background-image: url('../img/mainvisual.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    &__inner {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__heading {
+        text-align: center;
+    }
+}
