@@ -4,11 +4,16 @@
     text-align: center;
     color: g.$text-color;
     &__heading {
-        font-size: 40px;
+        font-size:36px;
+        @include g.sp {
+            font-size: 32px;
+            line-height: 1.5;
+        }
     }
     &__underline {
-        padding: 0 35px;
+        padding: 0;
         background: linear-gradient(transparent 70%, #f5f534 0%);
+        margin: 0;
     }
     &__text {
         margin-top: 40px;
