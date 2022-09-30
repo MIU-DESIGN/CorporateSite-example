@@ -34,10 +34,13 @@
     }
 }
 
-
 .slider {
     visibility: hidden;
 }
 .slider.slick-initialized {
 visibility: visible;
+}
+
+.slick-dots li {
+    margin: 0;
 }

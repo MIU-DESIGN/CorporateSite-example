@@ -6,19 +6,34 @@
     display: flex;
     padding: 60px 20px;
     align-items: center;
+    @include g.sp {
+        display: block;
+        padding: 0 20px 60px;
+        background-image: linear-gradient(to bottom, #fff 30%, g.$base-color 30%);
+    }
 }
 
 .p-works__slider-wrap {
     width: 60%;
     margin-right: 20px;
+    @include g.sp {
+        width: 100%;
+        margin-right: 0;
+    }
 }
 
 .p-works{
     padding: 60px 0 40px 0;
+    @include g.sp {
+        padding: 0;
+    }
     
     &__desc {
-    flex: 1;
-    text-align: center;
+        flex: 1;
+        text-align: center;
+        @include g.sp {
+            margin-top: 40px;
+        }
     }
     &__body {
         margin-top: 28px;
