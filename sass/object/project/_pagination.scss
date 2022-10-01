@@ -1,0 +1,36 @@
+@use '../../global/' as g;
+
+.p-pagination-wrap {
+    margin-top: 100px;
+}
+
+.p-pagination {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+
+
+    &__current,
+    &__link {
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        margin: 0 5px;
+    }
+    &__current {
+        background-color: g.$base-color;
+        color: g.$accent-color;
+    }
+    &__link {
+        background-image: linear-gradient(135deg, #7633a4, #250d65);
+        color: g.$base-color;
+        &:hover {
+            opacity: .85;
+        }
+    }
+}
+

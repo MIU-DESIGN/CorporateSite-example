@@ -8,8 +8,15 @@
     }
 }
 
+.p-news-list-inner {
+    max-width: 780px;
+}
+
+.p-news__heading {
+    margin-right: 50px;
+}
+
 .p-news-list {
-    margin-left: 50px;
     font-size: 15px;
     color: g.$text-color;
     @include g.sp {
@@ -21,7 +28,7 @@
 
     li {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         @include g.sp {
             display: block;
         }
