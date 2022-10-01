@@ -1,0 +1,25 @@
+@use '../../global/' as g;
+
+
+.p-breadcrumb {
+    background-color: g.$base-color;
+    padding: 16px 0;
+    font-size: 12px;
+    position: sticky;
+    top: 64px;
+
+    &__list {
+        display: flex;
+    }
+    
+    &__item {
+        line-height: 1.2;
+        &:not(:last-child) {
+            &::after {
+                padding: 0 .5em;
+                content: '>';
+                color: g.$text-color;
+            }
+        }
+    }
+}

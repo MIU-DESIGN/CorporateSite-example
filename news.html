@@ -14,7 +14,7 @@
 <body>
     <header class="l-header">
         <h1 class="l-header__logo">
-            <a href="#index.html">
+            <a href="index.html">
                 <img src="img/header-logo.png" alt="ヘッダーロゴ">
             </a>
         </h1>
@@ -46,9 +46,30 @@
         </div>
     </div>
     <main>
-
-
-
+        <div class="p-breadcrumb">
+            <div class="l-inner">
+                <ol class="p-breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <!-- 1つめ -->
+                    <li class="p-breadcrumb__item" itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="index.html">
+                            <span itemprop="name">HOME</span>
+                        </a>
+                        <meta itemprop="position" content="1" />
+                    </li>
+                
+                    <!-- 2つめ -->
+                    <li class="p-breadcrumb__item" itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="news.html">
+                            <span itemprop="name">NEWS</span>
+                        </a>
+                    <meta itemprop="position" content="2" />
+                    </li>
+                </ol>
+            </div>
+        </div>
+    
 
     </main>
     <!-- <footer class="l-footer">
@@ -66,8 +87,8 @@
             <a class="c-copywrite" href=".">&copy;PON DESIGN</a>
         </div>
     </footer> -->
-
-<script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>
