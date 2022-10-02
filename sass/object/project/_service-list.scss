@@ -1,0 +1,44 @@
+@use '../../global/' as g;
+
+.p-service-list {
+    margin-bottom: 60px;
+    display: flex;
+    @include g.sp {
+        flex-direction: column;
+    }
+
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &__img {
+        width: 40%;
+        @include g.sp {
+            width: 100%;
+        }
+    }
+
+    &__text {
+        margin-left: 50px;
+        flex: 1;
+        @include g.sp {
+            margin-left: 0;
+        }
+    }
+
+    &__heading {
+        font-size: 24px;
+        font-weight: bold;
+        @include g.sp {
+            text-align: center;
+            margin-top: 24px;
+        }
+    }
+
+    &__detail {
+        margin-top: 24px;
+        line-height: 1.6;
+    }
+
+}
