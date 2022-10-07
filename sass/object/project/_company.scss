@@ -34,18 +34,30 @@
 
 .p-company-ceo {
     margin-top: 160px;
+    @include g.sp {
+        margin-top: 50px;
+    }
     &__inner {
         display: flex;
         justify-content: space-between;
         padding: 0 80px;
+        @include g.sp {
+            flex-direction: column;
+            padding: 0;
+        }
     }
-
     &__pic {
         width: 40%;
-
+        @include g.sp {
+            width: 100%;
+            margin-bottom: 24px;
+        }
     }
     &__text {
         width: 55%;
+        @include g.sp {
+            width: 100%;
+        }
         > p {
             margin-bottom: 24px;
             line-height: 1.4;
@@ -54,21 +66,34 @@
 }
 
 .p-company-info{
+    margin-bottom: 32px;
 
     &__table {
         display: flex;
         flex-wrap: wrap;
         margin-top: 32px;
+        padding: 0 80px;
+        @include g.sp {
+            display: block;
+            padding: 0;
+        }
         > dt {
             width: 20%;
-        font-weight: normal;
-        padding: 36px 0 36px 16px;
-        border-bottom: 1px solid #DDD;
+            font-weight: normal;
+            padding: 36px 0 36px 16px;
+            border-bottom: 1px solid #DDD;
+            @include g.sp {
+                padding: 12px 0;
+                border: none;
+            }
         }
         > dd {
             width: 80%;
             padding: 36px 0 36px 16px;
             border-bottom: 1px solid #DDD;
+            @include g.sp {
+                padding: 0 0 16px 16px;
+            }
         }
     }
 
