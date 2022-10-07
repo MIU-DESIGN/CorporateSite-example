@@ -9,7 +9,7 @@
     padding: 100px 0;
     max-width: 1300px;
     margin: 0 auto;
-    background-image: url('../img/bg-circle.png'), url('../img/bg-face.png');
+    background-image: url('../img/bg-face.png'), url('../img/bg-circle.png');
     background-position: center center, center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -24,3 +24,62 @@
     margin-top: 32px;
 }
 
+.p-company-message-inner {
+    background-position: center 40px, center top;
+}
+
+.p-company-message__heading {
+    margin-bottom: 24px;
+}
+
+.p-company-ceo {
+    margin-top: 160px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 80px;
+    }
+
+    &__pic {
+        width: 40%;
+
+    }
+    &__text {
+        width: 55%;
+        > p {
+            margin-bottom: 24px;
+            line-height: 1.4;
+        }
+    }
+}
+
+.p-company-info{
+
+    &__table {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 32px;
+        > dt {
+            width: 20%;
+        font-weight: normal;
+        padding: 36px 0 36px 16px;
+        border-bottom: 1px solid #DDD;
+        }
+        > dd {
+            width: 80%;
+            padding: 36px 0 36px 16px;
+            border-bottom: 1px solid #DDD;
+        }
+    }
+
+    &__map {
+        margin-top: 60px;
+        > a {
+            display: inline-block;
+            margin-top: 8px;
+            &:hover {
+                border-bottom: 1px solid g.$text-color;
+            }
+        }
+    }
+}

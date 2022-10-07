@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>記事詳細</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="css/desyle.css">
     <link rel="stylesheet" href="css/main.css">
+    <title>Company</title>
 </head>
 <body>
-
     <header class="l-header">
         <h1 class="l-header__logo">
             <a href="index.html">
@@ -41,14 +40,14 @@
         <div class="p-sub-hero__inner">
             <div class="p-sub-hero__heading">
                 <h2 class="c-heading__primary c-heading__primary--white">
-                    SERVICE
-                    <span class="c-heading__sub">事業内容</span>
+                    COMPANY
+                    <span class="c-heading__sub">私たちについて</span>
                 </h2>
             </div>
         </div>
     </div>
 
-    <main class="l-contents">
+    <main>
         <div class="p-breadcrumb">
             <div class="l-inner">
                 <ol class="p-breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
@@ -65,58 +64,69 @@
                     <li class="p-breadcrumb__item" itemprop="itemListElement" itemscope
                     itemtype="https://schema.org/ListItem">
                         <a itemprop="item" href="service.html">
-                            <span itemprop="name">SERVICE</span>
+                            <span itemprop="name">COMPANY</span>
                         </a>
                     <meta itemprop="position" content="2" />
                     </li>
                 </ol>
             </div>
         </div>
-
-        <section class="p-service-list l-section">
-            <div class="p-service__inner l-inner">
-                <div class="p-service-list">
-                    <div class="p-service-list__img">
-                        <img src="img/service1.avif" alt="事業内容1">
+        <div class="p-company-inner p-company-message-inner l-inner">
+            <h3 class="p-company-message__heading c-subpage__heading">
+                メッセージ
+            </h3>
+            <div class="p-company-message__body">
+                <div class="p-message">
+                    <div class="p-message__heading">
+                        <span class="p-message__underline"> サイトのゴール = 
+                        <br class="u-sp-only">
+                        夢を叶えること</span>
                     </div>
-                    <div class="p-service-list__text">
-                        <h3 class="p-service-list__heading">Webサイト制作</h3>
-                        <p class="p-service-list__detail">
-                            新規サイトはもちろん、サイトリニューアルやランディングページ制作も承っております。
-                            サイトのゴールはお客様の夢や目的を実現することです。
-                            そのためにまずはしっかりとお話をうかがい、サイトに必要な要素を洗い出します。
-                            その後、ワイヤーフレーム（サイトのレイアウト）の作成、デザインの制作、コーディングと進みます。
-                            制作の過程でお客様とのお打ち合わせを数回実施させていただき、ご要望とご意見を反映しながらサイトを制作していきます。
-                        </p>
-                    </div>
-                </div>
-                <div class="p-service-list">
-                    <div class="p-service-list__img">
-                        <img src="img/service2.jpg" alt="事業内容2">
-                    </div>
-                    <div class="p-service-list__text">
-                        <h3 class="p-service-list__heading">Webサイト運用</h3>
-                        <p class="p-service-list__detail">
-                            サイトの更新作業や独自のアクセス解析に基づいたサイト改善のご提案が可能です。
-                            日々の面倒な更新作業は私たちにおまかせください。テキストの修正やリンクの張り替えなどの簡単な作業から、特集ページやバナーのデザインまで可能です。
-                            また、アクセス解析によるサイト改善も承っております。ご購入やお申込数などにお悩みでしたらぜひご相談ください。サイトの課題を発見し、改善案のご提案から実装までワンストップで対応いたします。  
-                        </p>
-                    </div>
-                </div>
-                <div class="p-service-list">
-                    <div class="p-service-list__img">
-                        <img src="img/service3.jpg" alt="事業内容3">
-                    </div>
-                    <div class="p-service-list__text">
-                        <h3 class="p-service-list__heading">アプリ開発</h3>
-                        <p class="p-service-list__detail">
-                            スマートフォンアプリ開発の他、Vue.jsやReactによるWebアプリの開発が可能です。開発力のみならず、充実したユーザー体験をもたらすためのUXデザインにも自信があります。作って終わり、ではなくユーザーに愛されるUI（ユーザーインターフェース）を実現し、アプリ開発によるお客様の事業の目的を達成する推進力となることを目指します。
-                        </p>
+                    <div class="p-message__text">
+                        お客様の夢を叶えること。</br>
+                        それがWebサイトのゴールであり、<br class="u-sp-only">私たちが目指すことです。</br>
+                        だからこそちゃんと成果を出すサイトを<br class="u-sp-only">全力でお作りします。</br>
+                        お客様の笑顔を見たい。</br>
+                        夢を実現する手助けをさせてください。
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="p-company-ceo">
+                <div class="p-company-ceo__inner">
+                    <div class="p-company-ceo__pic">
+                        <img src="img/ceo.jpg" alt="社長">
+                    </div>
+                    <div class="p-company-ceo__text">
+                        <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+                        <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                        </p>
+                        <p>代表取締役社長 猫山ポン太郎</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="p-company-info">
+            <div class="l-inner">
+                <h3 class="p-company-info__heading c-subpage__heading">会社概要</h3>
+                <dl class="p-company-info__table">
+                    <dt>社名</dt>
+                    <dd>株式会社 PON DESIGN</dd>
+                    <dt>設立</dt>
+                    <dd>2020.01.10</dd>
+                    <dt>代表取締役</dt>
+                    <dd>猫山ポン太郎</dd>
+                    <dt>資本金</dt>
+                    <dd>1,000,000</dd>
+                    <dt>所在地</dt>
+                    <dd>〒555-5555 東京都千代田区 ポンビルディング 606</dd>
+                </dl>
+                <div class="p-company-info__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25924.778135016004!2d139.73886959952515!3d35.686917289173365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c0c0b13f54d%3A0xb630953beee48188!2z5p2x5Lqs6YO95Y2D5Luj55Sw5Yy6!5e0!3m2!1sja!2sjp!4v1665132822673!5m2!1sja!2sjp" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a href="https://goo.gl/maps/No8uhdTZRPPGUwBW9">Google Mapで見る</a>
+                </div>
+            </div>
+        </div>
         <section class="p-contact l-section">
             <div class="p-contact-inner l-inner">
                 <div class="p-contact__heading">
@@ -150,7 +160,7 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
